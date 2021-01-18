@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      {nominees.length >= 5 && <div className="banner">You have 5 nominations or more!</div>}
+      {nominees.length >= 5 && <div className="banner fade-in"><h5>You have 5 nominations or more!</h5></div>}
       <div className="container">
         <header className="my-5 col-12">
           <h1>
