@@ -15,7 +15,7 @@ function App() {
   const searchHandler = async (query) => {
     setQuery(query)
     setSearchLoading(true)
-    const movies = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=fa9015b8`)
+    await fetch(`http://www.omdbapi.com/?s=${query}&apikey=fa9015b8`)
       .then(response => response.json())
       .then(data => {
         if (data.Response === "True") {
